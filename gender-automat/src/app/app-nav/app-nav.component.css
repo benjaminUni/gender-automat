@@ -15,3 +15,12 @@
   top: 0;
   z-index: 1;
 }
+
+.left-right-button{
+  bottom: 0;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  position: absolute;
+}
+
+

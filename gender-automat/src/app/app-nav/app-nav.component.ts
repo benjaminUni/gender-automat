@@ -9,11 +9,21 @@ import { map, shareReplay } from 'rxjs/operators';
   styleUrls: ['./app-nav.component.css']
 })
 export class AppNavComponent {
+  
   private breakpointObserver = inject(BreakpointObserver);
-
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
       shareReplay()
     );
+
+    swapSides:boolean = false;
+    swapIcon:boolean = false;
+    positionSwap:boolean = false;
+
+    doSwapSides():void{
+      this.swapSides = !this.swapSides;
+      this.swapIcon = !this.swapIcon;
+      this.positionSwap = !this.positionSwap;
+    }
 }
