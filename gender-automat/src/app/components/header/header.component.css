@@ -1,9 +1,0 @@
-.header-container{
-    top: 0;
-    max-width: 100vw;
-    background-color: chartreuse;
-}
-p{
-    flex: 1;
-    text-align: center;
-}
