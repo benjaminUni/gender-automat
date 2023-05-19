@@ -1,13 +1,14 @@
-<form [formGroup]="textForm" novalidate (ngSubmit)="onSubmit()">
+<div class="main-content">
+  <form [formGroup]="textForm" novalidate (ngSubmit)="onSubmit()">
   <mat-card class="shipping-card">
     <mat-card-header>
       <mat-card-title>Geben Sie hier Ihren Text ein</mat-card-title>
     </mat-card-header>
-    <mat-card-content>
+    <mat-card-content class="card-content">
       <div class="row">
         <div class="col">
           <mat-form-field class="full-width">
-            <textarea matInput formControlName="textField"></textarea>
+            <textarea #textInputField class="textInputArea" matInput formControlName="textField"></textarea>
             <mat-error *ngIf="textForm.controls['textField'].hasError('required')">
               Texteingabe ist <strong>notwendig</strong>.
             </mat-error>
@@ -22,9 +23,10 @@
 </form>
 <mat-card class="shipping-card">
   <mat-card-header>
-    <mat-card-title>Hier wird das Ergebnis angezeigt</mat-card-title>
+    <mat-card-title #resultTextField class="resultTextField">Hier wird das Ergebnis angezeigt</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    Lorem, ipsum dolor sit amet consectetur.
+    {{ resultText }}
   </mat-card-content>
 </mat-card>
+</div>

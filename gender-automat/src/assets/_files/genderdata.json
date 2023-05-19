@@ -1,0 +1,8 @@
+[
+    {"maskulin_word":"Mitarbeiter", "neutral_version":"Mitarbeiter*innen", "article_wrong": "der", "article_right": "die"},
+    {"maskulin_word":"Student", "neutral_version":"Student*innen", "article_wrong": "der", "article_right": "die"},
+    {"maskulin_word":"Dezernenten", "neutral_version":"Dezernenten*innen", "article_wrong": "die", "article_right": "die"},
+    {"maskulin_word":"Rektoren", "neutral_version":"Rektor*innen", "article_wrong": "die", "article_right": "die"},
+    {"maskulin_word":"Doktorand", "neutral_version":"Doktorand*innen", "article_wrong": "der", "article_right": "die"}
+
+]
