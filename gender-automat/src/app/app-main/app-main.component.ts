@@ -57,7 +57,7 @@ export class AppMainComponent{
           if(element === gender.neutral_version)
             {
               var index = words.indexOf(element);
-              if(index !== -1){
+              if(index !== 0){
                 var lowerCaseForComparison:string = words[index - 1].toLowerCase();
                 if(lowerCaseForComparison == gender.article_wrong){
                   words[index - 1] = this.checkIfFirstLetterIsCapital(words[index - 1], gender.article_right);

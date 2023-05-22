@@ -1,13 +1,19 @@
-import { NgModule, Component } from '@angular/core';
+import { AppLandingpageComponent } from './app-landingpage/app-landingpage.component';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PagenotfoundComponent } from './app-pagenotfound/pagenotfound.component';
+import { AppNavComponent } from './app-nav/app-nav.component';
+
 
 const routes: Routes = [
-  { path: '', redirectTo: '**', pathMatch: 'full'},
-  //{ path: '/home', component: Muss noch erzeugt werden}
+  { path: '', component: AppLandingpageComponent },
+  { path: 'main', component: AppNavComponent },
+  { path: '**', pathMatch: 'full', component: PagenotfoundComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: []
 })
 export class AppRoutingModule { }

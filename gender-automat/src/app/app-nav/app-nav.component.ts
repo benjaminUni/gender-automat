@@ -10,6 +10,7 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class AppNavComponent {
 
+  logo = "assets/_files/logo.png";
   private breakpointObserver = inject(BreakpointObserver);
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
