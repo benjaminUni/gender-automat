@@ -18,7 +18,8 @@
 
 .left-right-button{
   bottom: 0;
-  margin-left: 15%;
+  margin-left: 10%;
+  margin-right: 5%;
   margin-bottom: 5%;
   position: absolute;
 }

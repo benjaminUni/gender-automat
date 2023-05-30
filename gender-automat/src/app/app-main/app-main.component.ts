@@ -10,6 +10,9 @@ import genderdata from '../../assets/_files/genderdata.json';
 export class AppMainComponent{
 
   @ViewChild('textInputField') textInput: ElementRef;
+  inputMessage: string = "Gib hier deinen Text ein."
+  resultMessage: string = "Hier wird das Ergebnis angezeigt";
+  buttonText:string = "Absenden"
   resultText: string = "";
   genderList:{maskulin_word:string, neutral_version:string, article_wrong:string, article_right:string}[] = genderdata;
 

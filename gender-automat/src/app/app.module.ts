@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { PagenotfoundComponent } from './app-pagenotfound/pagenotfound.component';
 import { AppLandingpageComponent } from './app-landingpage/app-landingpage.component';
+import { AppDsgvoComponent } from './app-dsgvo/app-dsgvo.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { AppLandingpageComponent } from './app-landingpage/app-landingpage.compo
     AppMainComponent,
     AppFooterComponent,
     PagenotfoundComponent,
-    AppLandingpageComponent
+    AppLandingpageComponent,
+    AppDsgvoComponent
   ],
   imports: [
     BrowserModule,
