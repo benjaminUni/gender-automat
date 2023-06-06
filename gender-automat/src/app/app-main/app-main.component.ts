@@ -45,7 +45,7 @@ export class AppMainComponent{
       const firstLetterCapitalized = firstLetter.toUpperCase();
       const remainingLetters = newArticle.slice(1);
       capitalizedWord = firstLetterCapitalized + remainingLetters;
-    } 
+    }
     else{
       capitalizedWord = newArticle;
     }
@@ -55,21 +55,20 @@ export class AppMainComponent{
   correctArticleInInputText(textInput:string): string{
       var correctedText: string = "";
       const words = textInput.split(' ');
-      this.genderList.map(gender => {
-        words.map(element => {
-          if(element === gender.neutral_version)
-            {
-              var index = words.indexOf(element);
-              if(index !== 0){
-                var lowerCaseForComparison:string = words[index - 1].toLowerCase();
-                if(lowerCaseForComparison == gender.article_wrong){
-                  words[index - 1] = this.checkIfFirstLetterIsCapital(words[index - 1], gender.article_right);
+        words.map((element, index) => {
+          this.genderList.map(gender => {
+            if(element === gender.neutral_version)
+              {
+                if(index !== 0){
+                  var lowerCaseForComparison:string = words[index - 1].toLowerCase();
+                  if(lowerCaseForComparison == gender.article_wrong){
+                    var capitalizedArticle = this.checkIfFirstLetterIsCapital(words[index - 1], gender.article_right);
+                    words.splice(index - 1, 1, capitalizedArticle);
+                  }
                 }
               }
-            }
           }
         );
-        textInput = textInput.replaceAll(gender.maskulin_word, gender.neutral_version);
         }
       );
       correctedText = words.join(" ");

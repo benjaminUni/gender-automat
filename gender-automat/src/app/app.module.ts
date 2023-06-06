@@ -21,7 +21,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { PagenotfoundComponent } from './app-pagenotfound/pagenotfound.component';
-import { AppLandingpageComponent } from './app-landingpage/app-landingpage.component';
+import { AppInfopageComponent } from './app-infopage/app-infopage.component';
 import { AppDsgvoComponent } from './app-dsgvo/app-dsgvo.component';
 
 
@@ -32,7 +32,7 @@ import { AppDsgvoComponent } from './app-dsgvo/app-dsgvo.component';
     AppMainComponent,
     AppFooterComponent,
     PagenotfoundComponent,
-    AppLandingpageComponent,
+    AppInfopageComponent,
     AppDsgvoComponent
   ],
   imports: [
