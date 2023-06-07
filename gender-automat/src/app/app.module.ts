@@ -23,6 +23,7 @@ import { AppFooterComponent } from './app-footer/app-footer.component';
 import { PagenotfoundComponent } from './app-pagenotfound/pagenotfound.component';
 import { AppInfopageComponent } from './app-infopage/app-infopage.component';
 import { AppDsgvoComponent } from './app-dsgvo/app-dsgvo.component';
+import { AppExamplesGridlayoutComponent } from './app-examples-gridlayout/app-examples-gridlayout.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { AppDsgvoComponent } from './app-dsgvo/app-dsgvo.component';
     AppFooterComponent,
     PagenotfoundComponent,
     AppInfopageComponent,
-    AppDsgvoComponent
+    AppDsgvoComponent,
+    AppExamplesGridlayoutComponent
   ],
   imports: [
     BrowserModule,

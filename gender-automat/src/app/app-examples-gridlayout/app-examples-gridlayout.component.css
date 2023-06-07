@@ -1,0 +1,88 @@
+.lists{
+    margin-bottom: 2%;
+    margin: 5px;
+    border: 2px solid #f1bae3;;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.card{
+    height: 40px;
+}
+
+.cardlist{
+    height: 40px;
+}
+
+.card-content{
+    max-width: 100%;
+    margin: 5%;
+    border: 3px solid #f1bae3;
+    border-radius: 15px;
+    padding: 2%;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+  .card-content-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #f1bae3;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f1bae3;
+    border-bottom: 10px solid transparent;
+    right: -21px;
+    top: 6px;
+  }
+  
+  .card-content-left:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 7px solid #298cd6;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #298cd6;
+    border-bottom: 7px solid transparent;
+    right: -11px;
+    top: 10px;
+  }
+
+  .card-content-right:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #f1bae3;
+    border-top: 10px solid #f1bae3;
+    border-bottom: 10px solid transparent;
+    left: -21px;
+    top: 6px;
+  }
+  
+  .card-content-right:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 7px solid transparent;
+    border-right: 7px solid #298cd6;
+    border-top: 7px solid #298cd6;
+    border-bottom: 7px solid transparent;
+    left: -11px;
+    top: 10px;
+  }
+
+  .right{
+    left: 0;
+    position: absolute;
+  }
+
+  .left{
+    right: 0;
+    position: absolute;
+  }
